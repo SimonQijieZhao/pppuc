@@ -1,5 +1,12 @@
 # 工具使用说明
 
+## Markdown
+
+下面是一些Markdown的使用参考链接：
+* [Markdown Tutorial](http://markdowntutorial.com/)：一个交互式的Markdown教程
+* [Markdown Basics - GitHub](https://help.github.com/articles/markdown-basics/)：GitHub上的一个简单的Markdown语法列表
+* [GitHub Flavored Markdown](https://help.github.com/articles/github-flavored-markdown/)：GitHub上特有的Markdown语法列表，提供了更加丰富的功能，比如不同语言代码的彩色高亮显示
+
 ## GitHub for Windows
 
 [GitHub for Windows](https://windows.github.com)是[GitHub](https://github.com)提供的在Windows上管理GitHub上文件的工具。使用浏览器登录GitHub只能编辑和创建文本文件。而使用GitHub for Windows则可以移动文件，创建二进制文件（比如图片等）。
