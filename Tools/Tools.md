@@ -6,6 +6,12 @@
 
 在安装GitHub for Windows时，会弹出窗口要求安装*.NET framwork*，请务必安装，否则无法正常使用。
 
+安装完成之后，需要将GitHub上的文件clone到自己的电脑上，之后才能在自己电
+脑上对文件和目录进行修改。如下图所示，点击左边的加号，然后点击Clone，并
+选择需要clone的repository。
+
+![Clone GitHub repos to Windows](figures/github-windows-clone.png?raw=true)
+
 
 ## Sublime Text
 
