@@ -80,24 +80,24 @@ Windows下，要在Sublime Text 2中实现编译、运行C/C++代码，需要修
 具体是：Sublime Text 2中Tools -> Build System -> New Build System
 输入如下内容，并将文件保存为C++Bulider.sublime-bulid。
 
+```json
 {
-     "cmd": ["g++", "${file}", "-o", "${file_path}/${file_base_name}"],
-     "file_regex": "^(..[^:]*):([0-9]+):?([0-9]+)?:? (.*)$",
-     "working_dir": "${file_path}",
-     "selector": "source.c, source.c++",
-     "encoding": "cp936",
-     "shell": true,
-
-
-     "variants":
-     [
-          {
-               "name": "Run",
-               //"cmd": ["CMD", "/U", "/C", "g++ ${file} -o ${file_base_name} && ${file_base_name}"] 
-               "cmd": [ "start", "${file_path}/${file_base_name}.exe"]
-          }
-     ]
+  "cmd": ["g++", "${file}", "-o", "${file_path}/${file_base_name}"],
+  "file_regex": "^(..[^:]*:([0-9]+):?([0-9]+)?:? (.*)$",
+  "working_dir": "${file_path}",
+  "selector": "source.c, source.c++",
+  "encoding": "cp936",
+  "shell": true,
+  "variants":
+  [
+    {
+      "name": "Run",
+      "cmd": ["cmd", "/u", "/c", "g++ ${file} -o ${file_path}/${file_base_name} && ${file_path}/${file_base_name}.exe"]
+      //"cmd": ["cmd", "/u", "/c", "g++ ${file} -o ${file_path}/${file_base_name}", "&&", "start", "cmd", "/u", "/c", "${file_path}/${file_base_name}.exe & pause"]
+    }
+  ]
 }
+```
 
 ###编译测试
 
