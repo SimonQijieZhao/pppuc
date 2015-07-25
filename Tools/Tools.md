@@ -46,3 +46,58 @@ print('Error validating download (got %s instead of %s), please try manual insta
 ```
 
 然后打开Sublime Text，打开Sublime Text的console（打开后是位于窗口下方的一个白色的输入框），将安装代码粘贴，最后回车即可。之后会提示说重启Sublime Text（注意：这个过程中还会多次提示重启Sublime Text）。最后，在Sublime Text的菜单Preferences下就会有Package Control这个选项，表示安装成功。
+
+##Sublime text2 C/C++ 编译环境设置(原文地址http://blog.sina.com.cn/s/blog_6e7384df0101qzya.html)
+
+###下载安装Sublime text2 for windows
+下载地址：http://www.sublimetext.com/
+
+###下载安装 MinGW 与系统变量设置
+
+#####2.1本文使用的C/C++编译器是gcc/g++，所以需要下载安装MinGW（下载地址：http://sourceforge.net/projects/mingw/）
+
+安装完成后会让用户选择需要下载的Package
+选择要下载的Package：
+
+选择 MinGW Compiler Suite之后，添加 The GNU C++ Compiler 的相关项即可。
+
+####2.2 设置环境变量
+右击我的电脑，点属性->高级->环境变量。
+在环境变量PATH 添加系统 MinGW 的实际安装位置,如: D:\Program Files\MinGW 或者比如本文中演示的C:\MinGW\bin。在PATH里加入C:\MinGW\bin（具体路径请根据你的MinGW选择）。如果PATH里面还有其他的变量，记得要加个英文半角分号。一般 PATH 中的变量会非常的多,不同变量之间使用;分隔。
+新建LIBRARY_PATH变量，如果有的话，在值中加入C:\MinGW\lib，这是标准库的位置。
+新建C_INCLUDEDE_PATH变量，值设为C:\MinGW\include。
+检查变量设置：Win+R输入: cmd ,在命令行中输入: g++ -v ,有内容输入证明环境变量配置正确.如果出现 'g++' 不是内部或外部命令，也不是可运行的程序或批处理文件。检查上一步配置. 
+
+###三、Sublime Building System 设置
+Windows下，要在Sublime Text 2中实现编译、运行C/C++代码，需要修改或新建一个C++编译配置。
+具体是：Sublime Text 2中Tools -> Build System -> New Build System
+输入如下内容，并将文件保存为C++Bulider.sublime-bulid。
+{
+     "cmd": ["g++", "${file}", "-o", "${file_path}/${file_base_name}"],
+     "file_regex": "^(..[^:]*):([0-9]+):?([0-9]+)?:? (.*)$",
+     "working_dir": "${file_path}",
+     "selector": "source.c, source.c++",
+     "encoding": "cp936",
+     "shell": true,
+
+
+     "variants":
+     [
+          {
+               "name": "Run",
+               //"cmd": ["CMD", "/U", "/C", "g++ ${file} -o ${file_base_name} && ${file_base_name}"] 
+               "cmd": [ "start", "${file_path}/${file_base_name}.exe"]
+          }
+     ]
+}
+
+###编译测试
+
+
+经过以上步骤搭建好C/C++编译环境后，就可以在Sublime Text 2中编译运行C/C++代码了。
+如图所示：
+ctrl+B：生成
+ctrl+shift+B：运行
+
+
+生成的可执行文件在cpp同目录下：
