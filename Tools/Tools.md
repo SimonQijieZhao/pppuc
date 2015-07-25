@@ -20,7 +20,11 @@
 ![Clone GitHub repos to Windows](figures/github-windows-clone.png?raw=true)
 
 
-## Sublime Text
+## Visual Studio（感觉比较适合初学者使用）
+
+Visual Studio是微软发布的集成开发环境（Integrated Development Environment，IDE），是集代码编辑（Edit）、编译（Compile）、调试（Debug）于一体的编程工具。Visual Studio Community是它的免费版本，可供学生使用。感觉目前来说它比Sublime Text更加适合初学者使用。目前的最新版本是Visual Studio Community 2015，可以在[Visual Studio的网页](https://www.visualstudio.com/zh-cn/visual-studio-homepage-vs.aspx)下载。
+
+## Sublime Text（目前发现不适合初学者用来学习编程）
 
 [Sublime Text](http://www.sublimetext.com/)是一个文本编辑器（Editor），
 可以用来集成开发多种语言。Sublime Text 3是其未来主要开发的版本，不过目
