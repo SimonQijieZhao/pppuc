@@ -72,6 +72,7 @@ print('Error validating download (got %s instead of %s), please try manual insta
 Windows下，要在Sublime Text 2中实现编译、运行C/C++代码，需要修改或新建一个C++编译配置。
 具体是：Sublime Text 2中Tools -> Build System -> New Build System
 输入如下内容，并将文件保存为C++Bulider.sublime-bulid。
+
 {
      "cmd": ["g++", "${file}", "-o", "${file_path}/${file_base_name}"],
      "file_regex": "^(..[^:]*):([0-9]+):?([0-9]+)?:? (.*)$",
