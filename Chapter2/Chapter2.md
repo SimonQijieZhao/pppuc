@@ -32,3 +32,29 @@ int main()
 
 P.S
 “\n” means going nextline
+
+Review
+1. What is the purpose of the “Hello, World!” program?
+  To show the “Hello, world!” in the screen
+2. Name the four parts of a function.
+   A return type, here int ;  A name, here main; A parameter list enclosed in parentheses; A function body enclosed in a set of “curly braces,” { } ;
+3. Name a function that must appear in every C++ program.
+main()
+4. In the “Hello, World!” program, what is the purpose of the line return 0; ?
+  Since main() is called by “the system,” we won’t use that return value.
+5. What is the purpose of the compiler?
+  Translate it from the human-readable form to something a machine can “understand.”
+6. What is the purpose of the #include directive?
+  It instructs the computer to make available (“to include”) facilities
+7. What does a .h suffix at the end of a file name signify in C++?
+  It is called a header or a header file. A header contains definitions of terms that we use in our program.
+8. What does the linker do for your program?
+  To link several separate parts together to form an executable program
+9. What is the difference between a source file and an object file?
+  One is code, one is an applicable program
+10. What is an IDE and what does it do for you?
+  IDE: interactive development environment;
+  To do the compile and link commands
+11. If you understand everything in the textbook, why is it necessary to practice?
+  To assure our thinking.
+
