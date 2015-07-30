@@ -51,10 +51,32 @@ main()
 8. What does the linker do for your program?
   To link several separate parts together to form an executable program
 9. What is the difference between a source file and an object file?
-  One is code, one is an applicable program
-10. What is an IDE and what does it do for you?
+  What you read and write is called source code or program text, and what the computer executes is called executable, object code, or machine code. 10. What is an IDE and what does it do for you?
   IDE: interactive development environment;
   To do the compile and link commands
 11. If you understand everything in the textbook, why is it necessary to practice?
   To assure our thinking.
+
+Terms
+
+1. //: Anything written after the token // (that’s the character /, called “slash,” twice) on a line is a comment, which are ignored by the computer.
+2. <<: output operator, <<
+3. C++: C++ is a programming language designed for a wide selection of programming tasks
+4. Comment: Comments are written to describe what the program is intended to do and in general to provide information useful for humans that can’t be directly expressed in code.
+5. Compiler: To get a program to run, you must first translate it from the human-readable form to something a machine can “understand.”
+6. Compile-time error: Errors found by the compiler
+7. Cout: The name cout refers to a standard output stream
+8. Executable: The code that the computer executes is called executable
+9. Function: A function is basically a named sequence of instructions for the computer to execute in the order in which they are written.
+10. Header: A header contains definitions of terms, such as cout, that we use in our program
+11. IDE: interactive development environment;
+12. #include: It instructs the computer to make available (“to include”) facilities from a file called std_lib_facilities.h. We wrote that file to simplify use of the facilities available in all implementations of C++
+13. library: the C++ standard library
+14. linker: A program usually consists of several separate parts, often developed by different people. For example, the “Hello, World!” program consists of the part we wrote plus parts of the C++ standard library. These separate parts (sometimes called translation units) must be compiled and the resulting object code files must be linked together to form an executable program. The program that links such parts together is (unsurprisingly) called a linker
+15. main():Every C++ program must have a function called main to tell it where to start executing.
+16. Object code: The code that computer executes is called executable, object code
+17. Output: 
+18. Program: A program usually consists of several separate parts
+19. Source code: What you read and write is called source code or program text,
+20. Statement: 
 
