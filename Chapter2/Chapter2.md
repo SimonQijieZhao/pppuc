@@ -29,7 +29,7 @@ int main()
 ```
 
 **P.S**: 
-“\n” means going nextline
+“`\n`” means going nextline
 
 ### Review
 
@@ -48,23 +48,23 @@ int main()
 4. In the “Hello, World!” program, what is the purpose of the line `return 0;` ?
   * Since `main()` is called by “the system,” we won’t use that return value.
 
-5. What is the purpose of the compiler?
+5. What is the purpose of the *compiler*?
   * Translate it from the human-readable form to something a machine can “understand.”
 
 6. What is the purpose of the `#include` directive?
-  * It instructs the computer to make available (“to include”) facilities
+  * It instructs the computer to make available (“to include”) facilities.  Usually, we make use of the code other programmers write to facilitate our own program, so that we don't have to reinvent the wheel, we just borrow it by `#include`.
 
 7. What does a `.h` suffix at the end of a file name signify in C++?
   * It is called a header or a header file.  A header contains definitions of terms that we use in our program.
 
-8. What does the linker do for your program?
+8. What does the *linker* do for your program?
   * To link several separate parts together to form an executable program
 
 9. What is the difference between a source file and an object file?
   * What you read and write is called source code or program text, and what the computer executes is called executable, object code, or machine code.
 
-10. What is an IDE and what does it do for you?
-  * IDE: interactive development environment;
+10. What is an *IDE* and what does it do for you?
+  * *IDE*: interactive development environment or integrated development environment
   * To do the compile and link commands
 
 11. If you understand everything in the textbook, why is it necessary to practice?
@@ -72,13 +72,13 @@ int main()
 
 ### Terms
 
-1. **`//`**: Anything written after the token `//` (that’s the character `/`, called “slash,” twice) on a line is a comment, which are ignored by the computer.
+1. **`//`**: Anything written after the token `//` (that’s the character `/`, called “slash,” twice) on a line until the end of that line is a comment, which are ignored by the computer.
 
 2. **`<<`**: output operator, `<<`
 
 3. **C++**: C++ is a programming language designed for a wide selection of programming tasks
 
-4. **Comment**: Comments are written to describe what the program is intended to do and in general to provide information useful for humans that can’t be directly expressed in code.  In addition, comments are a reminder of what the code does, in case that the programmer forget the purpose long after writing the code.
+4. **Comment**: Comments are written to describe what the program is intended to do and in general to provide information useful for humans that can’t be directly expressed in code.  In addition, comments are a reminder of what the code does, in case that the programmer forget the details or purpose long after writing the code.  Keeping comments is a good programming practice.
 
 5. **Compiler**: To get a program to run, you must first translate it from the human-readable form to something a machine can “understand.”
 
@@ -88,15 +88,15 @@ int main()
 
 8. **Executable**: The code that the computer executes is called executable
 
-9. **Function**: A function is basically a named sequence of instructions for the computer to execute in the order in which they are written.
+9. **Function**: A function is basically a named sequence of instructions for the computer to execute in the order in which they are written.  Usually, a function accomplish a certain task.  Multiple functions can be put together to solve a more complex problem.
 
 10. **Header**: A header contains definitions of terms, such as `cout`, that we use in our program
 
-11. **IDE**: interactive development environment
+11. **IDE**: interactive development environment or integrated development environment
 
 12. **`#include`**: It instructs the computer to make available (“to include”) facilities from a header file, such as `std_lib_facilities.h`. We wrote that file to simplify use of the facilities available in all implementations of C++
 
-13. **library**: the C++ standard library
+13. **library**: the C++ standard library; Actually, all programs written in the purpose that they will be re-used by others can be libraries.  The C++ standard libray is the common library contributed by the C++ community to make ease of C++ programming.  The C++ committee decides which functionality should be included in the C++ standard library.
 
 14. **linker**: A program usually consists of several separate parts, often developed by different people. For example, the “Hello, World!” program consists of the part we wrote plus parts of the C++ standard library. These separate parts (sometimes called translation units) must be compiled and the resulting object code files must be linked together to form an executable program. The program that links such parts together is (unsurprisingly) called a linker
 
